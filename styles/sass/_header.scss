@@ -1,7 +1,11 @@
-.test {
-    p {
-        span {
-            color: orange;
-        }
+header {
+    height: 400px;
+    background-image: url(../../images/study_session.jpg);
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+    background-position: 80% 32%;
+    margin: 0;
+    h1 {
+        margin: 0;
     }
 }
