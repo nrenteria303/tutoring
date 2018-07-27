@@ -5,10 +5,10 @@ html {
 
 body,
 html {
-    background: white;
-    color: black;
-    margin: 0;
+    background: $dark-green-color;
+    color: $bright-color;
     box-sizing: border-box;
+    margin: 0;
     *,
     *:before,
     *:after {
@@ -16,19 +16,19 @@ html {
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $font-title;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     font-family: $font-title;
+// }
 
-p {
-    font-family: $font-main;
-}
+// p {
+//     font-family: $font-main;
+// }
 
-a {
-    font-family: $font-main;
-}
+// a {
+//     font-family: $font-main;
+// }
