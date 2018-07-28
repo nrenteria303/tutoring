@@ -16,19 +16,30 @@ html {
     }
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//     font-family: $font-title;
-// }
+main {
+    margin-bottom: 180px;
+}
 
-// p {
-//     font-family: $font-main;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-titles;
+}
 
-// a {
-//     font-family: $font-main;
-// }
+p {
+    font-family: $font-text;
+}
+
+a {
+    font-family: $font-text;
+    color: $dark-green-color;
+}
+
+ul,
+ol,
+li {
+    font-family: $font-text;
+}

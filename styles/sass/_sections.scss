@@ -1,0 +1,28 @@
+.section-heading {
+    text-align: center;
+    text-shadow: 3px 3px 8px black;
+    margin: 56px 0;
+}
+
+.section-img{
+    width: 50%;
+    display: block;
+    margin: 8px 18px 6px 8px;
+    border: $earth-color solid 1px;
+    box-shadow: 2px 2px 8px black;
+    float: left;
+}
+
+.section-text {
+    font-size: 18px;
+    font-weight: bold;
+    overflow: auto;
+    margin-top: 2em;
+    background-color: lighten($bright-color, 40%);
+    color: $dark-green-color;
+    border-top: $earth-color solid 2px;
+    border-bottom: $earth-color solid 2px;
+    p {
+        padding: 0 17px;
+    }
+}

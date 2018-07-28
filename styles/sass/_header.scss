@@ -1,11 +1,40 @@
 header {
-    height: 300px;
-    background-image: url(../../images/study_session.jpg);
-    background-repeat: no-repeat;
-    background-size: 110% auto;
-    background-position: 80% 32%;
-    margin: 0;
-    h1 {
-        margin: 0;
+    #header-nav {
+        color: $dark-green-color;
+        border-bottom: $earth-color 2px solid;
+        border-top: $earth-color 1px solid;
+        box-shadow: 0px 1px 12px rgb(39, 39, 39);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(-16deg, darken($dark-green-color, 10%) -115%, $bright-color 18%, white 130%);
+        z-index: 1000;
+        h2 {
+            margin: 0;
+            padding: 16px 0px 16px 10px;
+            display: inline-block;
+        }
+    }
+    #header-banner {
+        height: 260px;
+        background-image: url(../../images/study_session.jpg);
+        background-repeat: no-repeat;
+        background-size: 116% auto;
+        background-position: 100% 10%;
+        margin: 56px 0 0 0;
+        border-bottom: $earth-color 2px solid;
+        box-shadow: 0 1px 0 black;
+        position: relative;
+        #header-bottom-text {
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            padding: 6px 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba($color: $bright-color, $alpha: 0.8);
+            color: darken($dark-green-color, 30%);
+        }
     }
 }
+

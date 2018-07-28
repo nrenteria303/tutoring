@@ -1,0 +1,43 @@
+footer {
+    color: $dark-green-color;
+    border-bottom: $earth-color 2px solid;
+    border-bottom: $earth-color 1px solid;
+    box-shadow: 0px -1px 12px rgb(39, 39, 39);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(-16deg, darken($dark-green-color, 10%) -115%, $bright-color 18%, white 130%);
+    z-index: 1000;
+
+    #footer-cont {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            width: 40%;
+            padding: 8px 6px 8px 16px;
+            font-weight: bold;
+        }
+
+        #footer-contact {
+            font-weight: bold;
+            ul,
+            li {
+                padding-left: 4px;
+                padding-right: 8px;
+            }
+
+            li:last-child {
+                padding-bottom: 16px;
+            }
+
+            // li a:hover {
+            //     :hover {
+            //         color: white;
+            //         font-weight: normal;
+            //     }
+            // }
+        }
+
+    }
+}
