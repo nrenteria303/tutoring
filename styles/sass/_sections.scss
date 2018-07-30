@@ -1,25 +1,33 @@
 .section-heading {
     text-align: center;
     text-shadow: 3px 3px 8px black;
-    margin: 56px 0;
+    margin: 64px 8px 42px;
 }
 
-.section-img{
+.section-img-left,
+.section-img-right {
     width: 50%;
     display: block;
-    margin: 8px 18px 6px 8px;
+    margin: 8px 16px 6px 16px;
     border: $earth-color solid 1px;
-    box-shadow: 2px 2px 8px black;
+}
+
+.section-img-left {
     float: left;
+    box-shadow: 2px 2px 8px black;
+}
+
+.section-img-right {
+    float: right;
+    box-shadow: -2px 2px 8px black;
 }
 
 .section-text {
     font-size: 18px;
-    font-weight: bold;
+    // font-weight: bold;
     overflow: auto;
-    margin-top: 2em;
-    background-color: lighten($bright-color, 40%);
-    color: $dark-green-color;
+    background-color: lighten($earth-color, 38%);
+    color: darken($dark-green-color, 20%);
     border-top: $earth-color solid 2px;
     border-bottom: $earth-color solid 2px;
     p {
