@@ -5,6 +5,7 @@ footer {
     box-shadow: 0px -1px 16px rgb(39, 39, 39);
     position: relative;
     bottom: 0;
+    margin-top: 80px;
     width: 100%;
     background: linear-gradient(-16deg, darken($dark-green-color, 10%) -115%, $bright-color 18%, white 130%);
     z-index: 1000;
@@ -24,7 +25,7 @@ footer {
             ul,
             li {
                 padding-left: 4px;
-                padding-right: 8px;
+                padding-right: 12px;
             }
 
             ul {
@@ -35,12 +36,10 @@ footer {
                 padding-bottom: 16px;
             }
 
-            // li a:hover {
-            //     :hover {
-            //         color: white;
-            //         font-weight: normal;
-            //     }
-            // }
+            li a:hover {
+                color: lighten($dark-green-color, 12%);
+                // font-weight: normal;
+            }
         }
 
     }
