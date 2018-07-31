@@ -38,6 +38,10 @@ a {
     color: $dark-green-color;
 }
 
+a:hover {
+    color: lighten($dark-green-color, 16%);
+}
+
 ul,
 ol,
 li {

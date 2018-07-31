@@ -1,5 +1,5 @@
 header {
-    #header-nav {
+    nav {
         color: $dark-green-color;
         border-bottom: $earth-color 2px solid;
         border-top: $earth-color 1px solid;
@@ -7,12 +7,23 @@ header {
         position: fixed;
         top: 0;
         width: 100%;
+        height: 75px;
         background: linear-gradient(-16deg, darken($dark-green-color, 10%) -115%, $bright-color 18%, white 130%);
         z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        h2,
+        #nav-menu-icn {
+            align-self: center;
+        }
         h2 {
             margin: 0;
-            padding: 20px 0px 20px 10px;
+            padding-left: 16px;
             display: inline-block;
+        }
+        #nav-menu-icn {
+            font-size: 40px;
+            padding-right: 25px;
         }
     }
     #header-banner {
