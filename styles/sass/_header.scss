@@ -13,6 +13,10 @@ header {
         display: flex;
         justify-content: space-between;
 
+        @media (min-width: $mq-xl) {
+            height: 90px;
+        }
+
         h2,
         #nav-menu-icn {
             align-self: center;
@@ -21,6 +25,10 @@ header {
             margin: 0;
             padding-left: 16px;
             display: inline-block;
+
+            @media (min-width: $mq-xl) {
+                font-size: 36px;
+            }
         }
         #nav-menu-icn {
             font-size: 34px;
@@ -38,6 +46,12 @@ header {
         border-bottom: $earth-color 3px solid;
         box-shadow: 0 1px 0 black;
         position: relative;
+
+        @media (min-width: $mq-xl) {
+            height: 340px;
+            background-size: 104% auto;
+        }
+
         #header-bottom-text {
             position: absolute;
             bottom: 0;
