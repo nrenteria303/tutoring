@@ -1,7 +1,7 @@
 .section-heading {
     text-align: center;
     text-shadow: 3px 3px 8px black;
-    margin: 64px 8px 42px;
+    margin: 64px 8px 36px;
 }
 
 .section-img-left,
@@ -23,13 +23,13 @@
 }
 
 .section-text {
-    font-size: 18px;
-    // font-weight: bold;
+    font-size: 17px;
     overflow: auto;
     background-color: lighten($earth-color, 38%);
     color: darken($dark-green-color, 20%);
     border-top: $earth-color solid 2px;
     border-bottom: $earth-color solid 2px;
+    box-shadow: 0 1px 26px 1px rgb(24, 24, 24);
     p {
         padding: 0 17px;
         margin-bottom: 14px;
