@@ -10,9 +10,14 @@ footer {
     background: linear-gradient(-16deg, darken($dark-green-color, 10%) -115%, $bright-color 18%, white 130%);
     z-index: 1000;
 
-    #footer-cont {
+    #footer-wrapper {
         display: flex;
         justify-content: space-between;
+
+        @media (min-width: $mq-xl) {
+            @include wrapper;
+            justify-content: space-around;
+        }
 
         p {
             width: 40%;

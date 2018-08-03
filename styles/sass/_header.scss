@@ -1,6 +1,5 @@
 header {
-    nav {
-        color: $dark-green-color;
+    #nav-wrapper {
         border-bottom: $earth-color 2px solid;
         border-top: $earth-color 1px solid;
         box-shadow: 0px 1px 16px rgb(39, 39, 39);
@@ -10,11 +9,20 @@ header {
         height: 75px;
         background: linear-gradient(-16deg, darken($dark-green-color, 10%) -115%, $bright-color 18%, white 130%);
         z-index: 1000;
-        display: flex;
-        justify-content: space-between;
 
         @media (min-width: $mq-xl) {
-            height: 90px;
+            height: 84px;
+        }
+    }
+
+    nav {
+        color: $dark-green-color;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        @media (min-width: $mq-xl) {
+            @include wrapper;
         }
 
         h2,
@@ -33,6 +41,28 @@ header {
         #nav-menu-icn {
             font-size: 34px;
             padding-right: 25px;
+
+            @media (min-width: $mq-xl) {
+                display: none;
+            }
+        }
+
+        #nav-menu {
+            display: none;
+
+            @media (min-width: $mq-xl) {
+                display: flex;
+                width: 300px;
+                justify-content: space-between;
+
+                .nav-menu-item {
+                    align-self: center;
+                }
+
+                a {
+                text-decoration: none;
+                }
+            }
         }
     }
 
@@ -48,8 +78,9 @@ header {
         position: relative;
 
         @media (min-width: $mq-xl) {
-            height: 340px;
+            height: 380px;
             background-size: 104% auto;
+            background-position: 100% 30%;
         }
 
         #header-bottom-text {
@@ -62,6 +93,10 @@ header {
             border-top: solid 1px black;
             background-color: rgba($color: lighten($bright-color, 30%), $alpha: 0.75);
             color: darken($dark-green-color, 30%);
+
+            @media (min-width: $mq-xl) {
+                font-size: 24px;
+            }
         }
     }
 }
