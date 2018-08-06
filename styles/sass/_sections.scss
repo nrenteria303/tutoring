@@ -1,11 +1,44 @@
+.section:nth-child(2n) {
+    background-color: lighten($earth-color, 34%);
+
+    .section-heading {
+        text-shadow: 3px 3px 8px rgb(172, 172, 172);
+        color: lighten($dark-green-color, 7%);
+    }
+}
+
+.section:nth-child(2n + 1) {
+    background-color: $dark-green-color;
+
+    .section-heading {
+        text-shadow: 3px 3px 8px black;
+    }
+
+    p, a {
+        color: lighten($earth-color, 38%);
+    }
+
+    a:hover {
+        color: rgb(175, 175, 175);
+    }
+}
+
+.section:last-child {
+    padding-bottom: 60px;
+
+    .section-content-wrapper {
+        border-bottom: none;
+    }
+}
+
 .section-heading {
     text-align: center;
-    text-shadow: 3px 3px 8px black;
-    margin: 64px 8px 36px;
+    padding: 30px 8px 36px;
+    margin: 0;
 
     @media (min-width: $mq-xl) {
         font-size: 44px;
-        margin: 100px 0 84px;
+        padding: 100px 0 40px;
     }
 }
 
@@ -39,15 +72,13 @@
     }
 }
 
-.section-text-wrapper {
+.section-content-wrapper {
     width: 100%;
-    background-color: lighten($earth-color, 38%);
-    border-top: $earth-color solid 2px;
     border-bottom: $earth-color solid 2px;
-    box-shadow: 0 1px 26px 1px rgb(24, 24, 24);
+    padding-bottom: 50px;
 }
 
-.section-text {
+.section-content {
     font-size: 17px;
     overflow: auto;
     color: darken($dark-green-color, 20%);
@@ -56,11 +87,12 @@
         margin-bottom: 14px;
 
         @media (min-width: $mq-xl) {
-            font-size: 20px;
+            font-size: 21px;
         }
     }
 
     @media (min-width: $mq-xl) {
         @include wrapper;
+        // display: flex;
     }
 }
