@@ -90,7 +90,7 @@ header {
 
             @media (min-width: $mq-xl) {
                 display: flex;
-                width: 300px;
+                width: 400px;
                 justify-content: space-between;
 
                 .nav-menu-item {
@@ -130,7 +130,7 @@ header {
             text-align: center;
             border-top: solid 1px black;
             background-color: rgba($color: lighten($bright-color, 30%), $alpha: 0.75);
-            color: darken($dark-green-color, 30%);
+            color: darken($dark-green-color, 3%);
 
             @media (min-width: $mq-xl) {
                 font-size: 25px;
