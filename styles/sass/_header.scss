@@ -34,13 +34,8 @@ header {
             position: relative;
         }
 
-        // #nav-dropdown {
-        //     display: none;
-
-        // }
-
-        .hide {
-            display: none;
+        #nav-menu-icn:hover {
+            color: lighten($dark-green-color, 15%)
         }
 
         #nav-dropdown a {
@@ -53,12 +48,21 @@ header {
             border-bottom: solid 1px rgb(110, 110, 110);
         }
 
+        #nav-dropdown a:hover {
+            background-color: lighten($bright-color, 23%);
+            text-decoration: underline;
+        }
+
+        .hide {
+            display: none;
+        }
+
         .show {
             display: block;
             position: absolute;
             right: 0;
             top: 55px;
-            background-color: lighten($bright-color, 20%);
+            background-color: lighten($bright-color, 31%);
             width: 100vw;
             z-index: 1000;
         }
