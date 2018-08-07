@@ -18,7 +18,15 @@
       <div id="nav-wrapper">
         <nav id="header-nav">
           <h2><i class="fas fa-chalkboard-teacher"></i> Nick the Math Tutor</h2>
-          <i id="nav-menu-icn" class="fas fa-bars"></i>
+          <div id="nav-dropdown-wrapper">
+            <i id="nav-menu-icn" class="fas fa-bars" onclick="dropNavMenu()"></i>
+            <div id="nav-dropdown" class="hide">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="./testimonials.html">Testimonials</a>
+              <a href="./contact.html">Contact</a>
+            </div>
+          </div>
           <div id="nav-menu">
             <h3 class="nav-menu-item"><a href="about.html">About</a></h3>
             <h3 class="nav-menu-item"><a href="#">Testimonials</a></h3>

@@ -26,9 +26,43 @@ header {
         }
 
         h2,
-        #nav-menu-icn {
+        #nav-dropdown-wrapper {
             align-self: center;
         }
+
+        #nav-dropdown-wrapper {
+            position: relative;
+        }
+
+        // #nav-dropdown {
+        //     display: none;
+
+        // }
+
+        .hide {
+            display: none;
+        }
+
+        #nav-dropdown a {
+            color: $dark-green-color;
+            padding: 14px 0;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: solid 1px rgb(110, 110, 110);
+        }
+
+        .show {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 55px;
+            background-color: lighten($bright-color, 20%);
+            width: 100vw;
+            z-index: 1000;
+        }
+
         h2 {
             margin: 0;
             padding-left: 16px;

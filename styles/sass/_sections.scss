@@ -1,8 +1,8 @@
 .section:nth-child(2n) {
-    background-color: lighten($earth-color, 34%);
+    background-color: lighten($earth-color, 37%);
 
     .section-heading {
-        text-shadow: 3px 3px 8px rgb(172, 172, 172);
+        text-shadow: 3px 3px 8px rgb(148, 148, 148);
         color: lighten($dark-green-color, 7%);
     }
 }
