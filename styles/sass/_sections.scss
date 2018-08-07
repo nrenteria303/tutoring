@@ -1,3 +1,7 @@
+.section {
+    box-shadow: 0 -2px 0 0 black;
+}
+
 .section:nth-child(2n) {
     background-color: lighten($earth-color, 37%);
 
@@ -26,7 +30,7 @@
 .section:last-child {
     padding-bottom: 60px;
 
-    .section-content-wrapper {
+    .section-content-wrapper:last-child {
         border-bottom: none;
     }
 }
@@ -74,7 +78,7 @@
 
 .section-content-wrapper {
     width: 100%;
-    border-bottom: $earth-color solid 6px;
+    border-bottom: $earth-color solid 7px;
     padding-bottom: 50px;
 }
 
@@ -93,6 +97,5 @@
 
     @media (min-width: $mq-xl) {
         @include wrapper;
-        // display: flex;
     }
 }

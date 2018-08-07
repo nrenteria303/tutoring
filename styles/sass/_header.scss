@@ -109,7 +109,7 @@ header {
         background-image: url(../../images/study_session.jpg);
         background-repeat: no-repeat;
         background-size: 116% auto;
-        background-position: 100% 10%;
+        background-position: 100% 40%;
         margin: 66px 0 0 0;
         border-bottom: $earth-color 3px solid;
         box-shadow: 0 1px 0 black;
@@ -118,7 +118,7 @@ header {
         @media (min-width: $mq-xl) {
             height: 410px;
             background-size: 104% auto;
-            background-position: 100% 30%;
+            background-position: 100% 28%;
         }
 
         #header-bottom-text {
