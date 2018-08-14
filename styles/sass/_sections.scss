@@ -37,12 +37,12 @@
 
 .section-heading {
     text-align: center;
-    padding: 30px 8px 36px;
+    padding: 36px 8px 20px;
     margin: 0;
 
     @media (min-width: $mq-xl) {
         font-size: 44px;
-        padding: 100px 0 40px;
+        padding: 85px 0 40px;
     }
 }
 
@@ -79,7 +79,11 @@
 .section-content-wrapper {
     width: 100%;
     border-bottom: $earth-color solid 7px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+
+    @media (min-width: $mq-xl) {
+        padding-bottom: 80px;
+    }
 }
 
 .section-content {
