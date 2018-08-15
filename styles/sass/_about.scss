@@ -1,5 +1,10 @@
 #about-story-nav {
     text-align: center;
+    cursor: pointer;
+
+    @media (min-width: $mq-xxl) {
+        display: none;
+    }
 }
 
 .nav-clicked {
@@ -9,31 +14,52 @@
 
 #my-story-wrapper,
 #my-stats-wrapper {
-    @include wrapper;
-    margin: 20px 0 80px;
+    margin: 20px auto 80px;
+    max-width: 660px;
 
     h1 {
         font-size: 3em;
         text-align: center;
         text-decoration: underline;
+        text-shadow: 3px 3px 8px black;
     }
 
 }
 
 #my-story-content {
     color: lighten($earth-color, 32%);
+    width: 93%;
+    display: block;
+    margin: 0 auto;
     p:first-of-type::first-letter {
         display: block;
         float: left;
-        line-height: .4;
+        line-height: .45;
         margin-right: 5px;
-        margin-top: 8px;
-        font-size: 3.5rem;
+        margin-top: 7px;
+        font-size: 3rem;
         font-family: 'Times New Roman', Times, serif;
     }
 }
 
 #my-stats-wrapper {
+    display: none;
+
+    @media (min-width: $mq-md) {
+
+        #resume-img {
+            max-width: 400px;
+        }
+
+        #about-lists-wrapper {
+            display: flex;
+        }
+    }
+
+    @media (min-width: $mq-xxl) {
+        display: block;
+    }
+
     #specialties,
     #experience {
         color: lighten($earth-color, 32%);
@@ -44,6 +70,7 @@
         }
 
         ul {
+            display: block;
 
             h2 {
                 font-size: 25px;
@@ -58,10 +85,82 @@
     }
 }
 
-.headshot-img {
-    max-width: 200px;
+#headshot-img,
+#resume-img {
     border: $earth-color 2px solid;
-    border-radius: 50%;
-    margin: 0 auto;
     display: block;
+    box-shadow: 3px 3px 9px black;
+}
+
+#headshot-img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+}
+
+#resume-img {
+    max-width: 340px;
+    margin: 20px auto 30px;
+
+    @media(max-width: $mq-xs) {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: $mq-xxl) {
+    #about-main-wrapper {
+        // @include wrapper;
+        width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        #my-story-wrapper {
+            margin-right: 40px;
+
+            h1 {
+                font-size: 58px;
+            }
+
+            #headshot-img {
+                float: left;
+                margin: 0 24px 20px 0;
+                max-width: 230px;
+            }
+
+            #my-story-content{
+                margin-top: 40px;
+
+                p {
+                    font-size: 17px;
+                    &:first-of-type::first-letter {
+                        line-height: .45;
+                        margin-right: 6px;
+                        margin-top: 10px;
+                        font-size: 3.2rem;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                }
+            }
+        }
+
+        #my-stats-wrapper {
+            width: 330px;
+            border: solid 2px $bright-color;
+            border-radius: 30px;
+            align-self: center;
+
+            h1 {
+                font-size: 40px;
+            }
+         
+            #resume-img {
+                max-width: 280px;
+            }
+
+            #about-lists-wrapper {
+                display: block;
+            }
+        }
+    }
 }
