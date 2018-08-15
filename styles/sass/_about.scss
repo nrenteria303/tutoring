@@ -1,0 +1,67 @@
+#about-story-nav {
+    text-align: center;
+}
+
+.nav-clicked {
+    color: darken($bright-color, 10%);
+    text-decoration: underline;
+}
+
+#my-story-wrapper,
+#my-stats-wrapper {
+    @include wrapper;
+    margin: 20px 0 80px;
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+}
+
+#my-story-content {
+    color: lighten($earth-color, 32%);
+    p:first-of-type::first-letter {
+        display: block;
+        float: left;
+        line-height: .4;
+        margin-right: 5px;
+        margin-top: 8px;
+        font-size: 3.5rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+#my-stats-wrapper {
+    #specialties,
+    #experience {
+        color: lighten($earth-color, 32%);
+
+        #experience-ul,
+        #specialties-ul {
+            margin-left: 28px;
+        }
+
+        ul {
+
+            h2 {
+                font-size: 25px;
+
+            }
+
+            li {
+                margin-left: 20px;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.headshot-img {
+    max-width: 200px;
+    border: $earth-color 2px solid;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
