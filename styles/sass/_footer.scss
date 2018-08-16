@@ -19,6 +19,7 @@ footer {
         }
 
         p {
+            color: $dark-green-color;
             width: 40%;
             padding: 0 6px 0 16px;
             font-weight: bold;
@@ -31,6 +32,7 @@ footer {
             li {
                 padding-left: 4px;
                 padding-right: 12px;
+                color: $dark-green-color;
             }
         }
 

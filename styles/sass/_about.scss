@@ -14,7 +14,7 @@
 
 #my-story-wrapper,
 #my-stats-wrapper {
-    margin: 20px auto 80px;
+    margin: 20px auto 60px;
     max-width: 660px;
 
     h1 {
@@ -107,9 +107,49 @@
     }
 }
 
+#programs-wrapper {
+    width: 96%;
+    margin: 0 auto 70px;
+    padding: 0 14px 0 8px;
+    border: solid $bright-color 2px;
+    border-radius: 30px;
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        margin-left: 14px;
+
+        li {
+            margin-left: 24px;
+        }
+    }
+
+    @media (min-width: $mq-lg) {
+        max-width: 1120px;
+        margin: 0 auto 80px;
+
+        #programs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        h1, ul {
+            width: 30%;
+            align-self: center;
+        }
+
+    }
+}
+
 @media (min-width: $mq-xxl) {
     #about-main-wrapper {
-        // @include wrapper;
         width: 1120px;
         margin: 0 auto;
         display: flex;
@@ -117,6 +157,7 @@
 
         #my-story-wrapper {
             margin-right: 40px;
+            margin-bottom: 30px;
 
             h1 {
                 font-size: 58px;

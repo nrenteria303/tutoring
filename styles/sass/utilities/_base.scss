@@ -27,6 +27,7 @@ h6 {
 
 p {
     font-family: $font-text;
+    color: lighten($earth-color, 38%);
 }
 
 a {
@@ -42,4 +43,8 @@ ul,
 ol,
 li {
     font-family: $font-text;
+}
+
+li {
+    color: lighten($earth-color, 35%);
 }
