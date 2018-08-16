@@ -9,6 +9,10 @@
         text-shadow: 3px 3px 8px rgb(148, 148, 148);
         color: lighten($dark-green-color, 7%);
     }
+
+    p {
+        color: $dark-green-color;
+    }
 }
 
 .section:nth-child(2n + 1) {
