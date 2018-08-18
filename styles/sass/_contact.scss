@@ -1,0 +1,78 @@
+#contact-page-main {
+    @include wrapper;
+    margin: 50px auto 70px;
+
+    h1, h2 {
+        text-shadow: 3px 3px 9px black;
+    }
+
+    h1, h3{
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        margin-left: 30px;
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    #contact-text-wrapper {
+        
+        position: relative;
+        background-image: url('../../images/math-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: 180%;
+        background-position: 45% 65%;
+        border-radius: 30px;
+        max-width: 600px;
+        margin: 20px auto 36px;
+         
+        &:before {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            opacity: .895;
+            background: $dark-green-color;
+            background-blend-mode: screen;
+            border-radius: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 18px;
+            border: solid $bright-color 2px;
+            border-radius: 30px;
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    #contact-info-wrapper {
+
+        @media (min-width: $mq-md) {
+            max-width: 400px;
+            margin: 60px auto;
+        }
+    }
+
+    a {
+        color: $bright-color;
+
+        &:hover {
+            color: lighten($bright-color, 35%);
+        }
+    }
+}

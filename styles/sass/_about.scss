@@ -46,6 +46,7 @@
     display: none;
 
     @media (min-width: $mq-md) {
+        padding: 0 20px 20px;
 
         position: relative;
         background-image: url('../../images/math-bg.jpg');
@@ -112,7 +113,7 @@
 
             li {
                 margin-left: 20px;
-                font-size: 17px;
+                font-size: 18px;
             }
         }
     }
@@ -189,6 +190,7 @@
 
         li {
             margin-left: 24px;
+            font-size: 17px;
         }
     }
 
