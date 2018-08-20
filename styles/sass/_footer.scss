@@ -8,10 +8,15 @@ footer {
     width: 100%;
     background: linear-gradient(-16deg, darken($dark-green-color, 10%) -115%, $bright-color 18%, white 130%);
     z-index: 1000;
+    font-size: 14px;
 
     #footer-wrapper {
         display: flex;
         justify-content: space-between;
+
+        @media (min-width: $mq-md) {
+            font-size: 16px;
+        }
 
         @media (min-width: $mq-xl) {
             @include wrapper;
