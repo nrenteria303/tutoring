@@ -36,7 +36,10 @@ gulp.task('watch-fonts', function() {
 gulp.task('default', ['compile-sass'], function() {
     browserSync.init({
         server: {
-                baseDir: "./"
+                baseDir: "./",
+                serveStaticOptions: {
+                        extensions: ['html']
+                }
         },
         notify: false
     });
