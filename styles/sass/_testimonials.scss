@@ -3,6 +3,7 @@
     h1 {
         text-align: center;
         text-shadow: 3px 3px 9px black;
+        margin: 50px auto 40px;
     }
 
     #testimonials-wrapper {
@@ -16,6 +17,31 @@
             &:last-child {
                 border-bottom: none
             }
+
+            @media (min-width: $mq-lg) {
+                margin-top: 40px;
+            }
+        }
+
+    }
+
+    h2 {
+        text-align: center;
+        text-shadow: 3px 3px 9px black;
+        margin-bottom: 60px;
+    }
+
+    @media (min-width: $mq-lg) {
+        max-width: 700px;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 42px;
+            margin: 60px auto 50px;
+        }
+
+        .testimonial {
+            font-size: 19px;
         }
     }
 
