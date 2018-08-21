@@ -1,0 +1,22 @@
+#testimonial-main-wrapper {
+    
+    h1 {
+        text-align: center;
+        text-shadow: 3px 3px 9px black;
+    }
+
+    #testimonials-wrapper {
+        width: 90%;
+        margin: 40px auto 70px;
+
+        .testimonial {
+            margin-top: 30px;
+            border-bottom: solid 1px white;
+            
+            &:last-child {
+                border-bottom: none
+            }
+        }
+    }
+
+}
