@@ -53,6 +53,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 20% 75%;
+        border: 2px solid $bright-color;
+        border-radius: 30px;
         
     
         &:before {
