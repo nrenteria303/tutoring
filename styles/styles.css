@@ -452,7 +452,7 @@ footer {
     display: flex;
     justify-content: space-between; }
     #about-main-wrapper #my-story-wrapper {
-      margin-right: 40px;
+      margin-right: 20px;
       margin-bottom: 30px; }
       #about-main-wrapper #my-story-wrapper h1 {
         font-size: 58px; }
@@ -471,7 +471,7 @@ footer {
             font-size: 3.2rem;
             font-family: 'Times New Roman', Times, serif; }
     #about-main-wrapper #my-stats-wrapper {
-      width: 330px;
+      width: 370px;
       border: solid 2px #00ebeb;
       border-radius: 30px;
       align-self: center; }
