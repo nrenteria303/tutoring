@@ -72,10 +72,24 @@ header nav {
       max-width: 960px;
       padding-left: 15px;
       padding-right: 15px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      max-width: 1140px; } }
   header nav h2,
   header nav #nav-dropdown-wrapper {
     align-self: center; }
+  header nav h2 {
+    margin: 0;
+    padding-left: 16px;
+    display: inline-block; }
+    @media (max-width: 374px) {
+      header nav h2 {
+        font-size: 21px; } }
+    @media (min-width: 560px) {
+      header nav h2 {
+        font-size: 40px; } }
+    @media (min-width: 1080px) {
+      header nav h2 {
+        font-size: 45px; } }
   header nav #nav-dropdown-wrapper {
     position: relative; }
   header nav #nav-menu-icn:hover {
@@ -101,16 +115,6 @@ header nav {
     background-color: #8affff;
     width: 100vw;
     z-index: 1000; }
-  header nav h2 {
-    margin: 0;
-    padding-left: 16px;
-    display: inline-block; }
-    @media (max-width: 374px) {
-      header nav h2 {
-        font-size: 21px; } }
-    @media (min-width: 940px) {
-      header nav h2 {
-        font-size: 38px; } }
   header nav #nav-menu-icn {
     font-size: 34px;
     padding-right: 25px; }
@@ -130,33 +134,46 @@ header nav {
           text-decoration: none; } }
 
 header #header-banner {
-  height: 260px;
+  height: 250px;
   background-image: url(../../images/study_session.jpg);
   background-repeat: no-repeat;
   background-size: 116% auto;
-  background-position: 100% 40%;
+  background-position: 100% 6%;
   margin: 66px 0 0 0;
   border-bottom: #c09569 3px solid;
   box-shadow: 0 1px 0 black;
   position: relative; }
+  @media (max-width: 374px) {
+    header #header-banner {
+      height: 220px; } }
+  @media (min-width: 780px) {
+    header #header-banner {
+      background-position: 100% 30%; } }
   @media (min-width: 940px) {
     header #header-banner {
-      height: 410px;
-      background-size: 104% auto;
-      background-position: 100% 28%; } }
+      height: 345px;
+      background-size: 107% auto;
+      background-position: 100% 31%; } }
   header #header-banner #header-bottom-text {
     position: absolute;
     bottom: 0;
-    margin: 0;
     padding: 6px 0;
     width: 100%;
-    text-align: center;
     border-top: solid 1px black;
     background-color: rgba(133, 255, 255, 0.75);
     color: #004646; }
+  header #header-banner #header-bottom-text-inner {
+    margin: 0;
+    text-align: center; }
+    @media (max-width: 560px) {
+      header #header-banner #header-bottom-text-inner {
+        text-align: left;
+        font-size: 24px;
+        max-width: 280px;
+        margin: 0 0 0 8px; } }
     @media (min-width: 940px) {
-      header #header-banner #header-bottom-text {
-        font-size: 25px; } }
+      header #header-banner #header-bottom-text-inner {
+        font-size: 29px; } }
 
 .section {
   box-shadow: 0 -2px 0 0 black; }
