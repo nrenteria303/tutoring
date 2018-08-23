@@ -16,6 +16,9 @@ html {
   html *:after {
     box-sizing: border-box; }
 
+main {
+  min-height: 55vh; }
+
 h1,
 h2,
 h3,
@@ -134,7 +137,7 @@ header nav {
           text-decoration: none; } }
 
 header #header-banner {
-  height: 250px;
+  height: 220px;
   background-image: url(../../images/study_session.jpg);
   background-repeat: no-repeat;
   background-size: 116% auto;
@@ -143,12 +146,10 @@ header #header-banner {
   border-bottom: #c09569 3px solid;
   box-shadow: 0 1px 0 black;
   position: relative; }
-  @media (max-width: 374px) {
-    header #header-banner {
-      height: 220px; } }
   @media (min-width: 780px) {
     header #header-banner {
-      background-position: 100% 30%; } }
+      background-position: 100% 30%;
+      height: 250px; } }
   @media (min-width: 940px) {
     header #header-banner {
       height: 345px;
@@ -170,7 +171,7 @@ header #header-banner {
         text-align: left;
         font-size: 24px;
         max-width: 280px;
-        margin: 0 0 0 8px; } }
+        margin: 0 0 0 16px; } }
     @media (min-width: 940px) {
       header #header-banner #header-bottom-text-inner {
         font-size: 29px; } }
